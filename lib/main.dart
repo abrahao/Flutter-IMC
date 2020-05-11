@@ -23,6 +23,27 @@ class _HomeState extends State<Home> {
           IconButton(icon: Icon(Icons.refresh), onPressed: () {}),
         ],
       ),
+      body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Icon(Icons.person_outline, size: 120.0, color: Colors.purple),
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  labelText: "Seu Peso (kg)",
+                  labelStyle: TextStyle(color: Colors.purple)),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.purple, fontSize: 25.0),
+            ),
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  labelText: "Sua Altura (cm)",
+                  labelStyle: TextStyle(color: Colors.purple)),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.purple, fontSize: 25.0),
+            ),
+          ]),
     );
   }
 }
